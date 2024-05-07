@@ -1,38 +1,533 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    font-family: "Montserrat";
 }
+body{
+    background-color: rgb(0, 0, 93);
+}
+.carousel{
+    width: 100%;
+    height: 50%;
+}
+.carouselimage{
+    height: 700px;
+}
+.login{
+    height: 550px;
+    background-color: white;
+    width:600px;
+    margin-left: 470px;
+    margin-top: 60px;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 10px 0px;
+    border-radius: 3px;
+    padding: 30px;
+}
+.login input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    margin-left: 30px;  
+}
+.motto{
+    padding: 70px;
+        font-size: 30px;
+        font-family: "Montserrat";
+    font-weight: bolder;
+    color: white;
+}
+.login input{
+    margin-right: 100px;
+    height:35px;
+    width: 450px;
+    border: 1 ;
+    border-radius: 0;
+    text-indent: 15px;
+}
+.login input:hover{
+    border-color:#a7aec1;
+}
+.login input:focus{
+    outline: #516395;
+    border-color: rgb(0, 0, 3);
+}
+.login button{
+    height:40px;
+    width:300px;
+    border-radius:3 px;
+    border:none;
+    font-weight: bold;
+    color: rgb(0, 0, 93);
+    background-color: #feac00;
+    margin-left:80px;
+}
+.login button:hover{
+    background-color:#ffbc33 ;
+}
+.login form{
+    margin-left: 60px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.logoTitle{
+    font-family:Montserrat;
+    color: white; 
+    font-weight: bolder; 
+    font-size:35px;
+    padding: 5px;
+    margin-left: 80px; 
+}
+.logo{
+    width: 50px;
+    margin-left: 20px;
+    position: absolute;
+}
+.navbar{
+    background-color: rgb(0, 0, 93);
+    height:70px;
+    display: flex;
+    justify-content:space-around ;
+}
+ul{
+    list-style-type: none;
+    display: inline-flex;
+    height: 55px;
+    margin-top: 10px;
+    align-items: center;
+}
+li{
+    padding-right: 20px;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    padding: 14px 16px;
+    transition: background-color 1s ;
+    border-radius: 10px;
+}
+li:hover{
+    background-color: aliceblue;
+    text-align: center;
+    color: #516395;
+    border-radius: 10px;
+}
+.book{
+    width:900px;
+    height:190px;
+    background-color: white;
+    margin-left: 300px;
+    border-radius: 6px;
+    margin-top: 170px;
+    position: relative;
+    border:1.5
+}
+.circle1{
+    width:100px;
+    height: 100px;
+    background-color:#488bc2;
+    border-radius: 50%;
+    opacity: 0.2;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+.circle2{
+    width:300px;
+    height: 300px;
+    background-color: 
+    #488bc2;
+    border-radius: 50%;
+    opacity: 0.2;
+    margin-left: 190px;
+    margin-top: 100px;
+}
+.circle3{
+    width:200px;
+    height: 200px;
+    background-color: 
+    #488bc2;
+    border-radius: 50%;
+    opacity: 0.2;
+    margin-left: 380px;
+    margin-top: 30px;
+}
+.circle4{
+    width:120px;
+    height: 120px;
+    background-color: 
+    #488bc2;
+    border-radius: 50%;
+    opacity: 0.2;
+    float: right;
+}
+.circles{
+    display: flex;
+    position: absolute;
+}
+select,input{
+    width: 190px;
+    height: 38px;
+    border-radius:5px;
+    color:#516395;
+    text-align:100px;
+    border-top: none;
+    border-left: none;
+    border-bottom: 3px solid rgb(0, 0, 93);
+    border-right: 3px solid rgb(0, 0, 93);    
+}
+.homeform{
+    font-size: 30px;
+}
+.formHomeLine1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right:220px;
+    margin-left:0px;
+}
+select[name="seattype"]{
+    margin-left: 20px;
+}
+input[type="submit"]{
+    width: 190px;
+    color: rgb(0, 0, 93);
+    background-color:#feac00 ;
+    margin-left:30px;
+    border: 2px solid #feac00 ;
+}
+input[type="submit"]:hover{
+    background-color:#ffbc33 ;
+}
+input[type="submit"]{
+    width: 190px;
+        color: rgb(0, 0, 93);
+        background-color:#feac00 ;
+    margin-left:30px;
+    border: 2px solid #feac00 ;
+}
+input[type="submit"]:hover{
+    background-color:#ffbc33 ;
+}
+.slogan{
+    margin-top:250px;
+    margin-left: 300px;   
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(0, 0, 93);
+}
+.slog{
+    font-size: 45px;
+    font-weight: bold;
+    color:rgb(0, 0, 93);
+    margin-left: 90px;
+    margin-top: 30px;
+}
+.footer{
+    background-color: rgb(0, 0, 93);
+    margin: 0;  
+}
+.fpara{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+.footerdiv{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+  .icons{
+    margin-left: 43%;
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .booking{
+    height:550px;
+    width: 1400px;
+    background-color: #f0f0f0;
+    margin-top: 15px;
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .formhomeline1{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 20px;
+    padding: 20px;
+    gap:50px
   }
+  .formhomeline2{
+    margin-left: 20px;
+  }
+  .booking h1{
+    font-weight: bold;
+    margin-left: 590px;
+  }
+  .booking h3{
+    font-size:20px;
+    text-align: center;
+    width: 600px;
+    margin-left: 450px;
+  }
+  .booking select{
+    width: 280px;
+    height: 50px;
 }
+.booking .booktitle{
+    font-weight:bold ;
+    font-size: 30px;
+}
+.booking input{
+      width: 280px;
+      height: 50px;
+  }
+  .booking form{
+    border: 2px solid #dadadc;
+    width: 80%;
+    height: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+  }
+  .booking img{
+    height: 200px;
+    width: 340px;
+    float: left;
+    margin-left: 90px;
+  }
+  li a{
+    text-decoration: none;
+    color:white;
+  }
+  li a:hover{
+    color:rgb(0, 0, 93)
+  }
+  .bookingform input{
+        background-color: #f0f0f0;
+        width: 250px;
+        border-radius: 0;
+        border-right:1px solid rgb(0, 0, 93); 
+        border-bottom:1px solid rgb(0, 0, 93); 
+  }
+  
+  .hidden{
+    display: none;
+  }
+  .boarding{
+    width: 40px;
+    height: 30px;
+  }
+  .submitbutton{
+    color: rgb(0, 0, 93);
+    background-color:#feac00 ;
+    margin-left:30px;
+    border: 2px solid #feac00 ;
+  }
+  .submitbutton:hover{
+    background-color:#ffbc33 ;
+  }
+.offer{
+    width: 100%;
+    height:480px;
+    background-image: url("images/offer.jpeg");
+    background-size: cover;
+}
+.offerSubmit{
+    margin-left: 600px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 93);
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 170px;
+}
+.offertext{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 40px;
+    color: rgb(0, 0, 93);
+    font-weight: bold;
+}
+.booktitle{
+    color: rgb(0, 0, 93);
+    margin-left: 60px;
+}
+.cards{
+    display: flex;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    gap:70px;
+}
+.carder img{
+    width:600px;
+    height: 350px;
+
+}
+.carder{
+    width: 600px;
+    height: 550px;
+    border: none;
+}
+.carder p{
+    color: rgb(0, 0, 93);
+}
+.carder h4{
+    color: rgb(0, 0, 93);
+    font-weight: bold;
+}
+.cards2{
+    display: flex;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    gap:70px;
+}
+.carder1 img{
+    width:380px;
+    height: 170px;
+
+}
+.carder1{
+    width: 380px;
+    height: 320px;
+    border: none;
+}
+.carder1 p{
+    color: rgb(0, 0, 93);
+}
+.carder1 h4{
+    color: rgb(0, 0, 93);
+    font-weight: bold;
+}
+.MyBooking{
+    width:100%;
+    height: 644px;
+}
+.displaybox{
+    width: 95%;
+    height: 450px;
+    background-color: #f0f0f0;
+    margin-left: 40px;
+}
+.displayflight{
+    width: 95%;
+    height: 450px;
+    background-color: #f0f0f0;
+    margin-left: 40px;
+    padding: 20px;
+}
+.bookingtitle{
+    font-weight: bold; 
+    color: rgb(0,0,93);
+    margin-left: 100px;
+}
+.error{
+    color:rgb(186, 0, 0);
+}
+#offerbox{
+    width:50%;
+    height:500px;
+    margin-left: 380px;
+    background-color: rgb(0, 0, 93);
+    position: absolute;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.closebutton{
+    float: right;
+    border: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: white;
+    font-weight: bold;
+}
+#offerOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1;
+}
+.error{
+    background-color: red;
+    color: white;
+}
+.flightbox{
+    width:97%;
+    height: 130px;
+    background-color:#f7f7f7 ;
+    border: 1px solid #dadadc;
+    margin-left:20px;
+    display: flex;
+}
+.timings span{
+    font-size: 15px;
+}
+.timings{
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 20px; */
+}
+.timings1{
+    width: 64%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 20px; */
+}
+.i1{
+    width: 100%;
+    padding: 10px;
+}
+.i1>span{
+    margin-left: 2  0px;
+    font-size: 27px;
+    font-weight: bold;
+}
+.i2{
+    width: 30%;
+    border: 1px solid #dadadc;
+    text-align: center;
+    padding: 5px;
+}
+.i5 input{
+    margin-top: 20%;
+}
+.i1 span{
+    margin-left: 60px;
+}
+.i2 span,.i3 span,.i4 span{
+    font-weight: bold;
+}
+.i3{
+    padding: 5px;
+    width: 30%;
+    border: 1px solid #dadadc;
+    text-align: center;
+}
+.i4{
+    border: 1px solid #dadadc;
+    text-align: center;
+    padding: 5px;
+    width: 30%;
+}
+.i5{
+    width: 40%;
+}
+
+.successbox{
+    width: 500px;
+    height: 500px;
+    margin-left: 30px;
+    background-color: white;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 4px;
+    transition: all 1s ease;
+
+}
+.sbox{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(0, 0, 93);
+    color: white;
+}   
